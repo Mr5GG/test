@@ -1,0 +1,218 @@
+@charset "UTF-8";
+/*css reset */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img { margin:0; padding:0; }
+fieldset, img,input,button { border:none; padding:0;margin:0;outline-style:none; }
+ul, ol { list-style:none; }
+input { padding-top:0; padding-bottom:0; font-family: "SimSun","宋体";}
+select, input { vertical-align:middle; }
+select, input, textarea { font-size:12px; margin:0; }
+textarea { resize:none; } /*防止拖动*/
+img {border:0; vertical-align:middle; }  /*  去掉图片低测默认的3像素空白缝隙*/
+table { border-collapse:collapse; }
+body {
+    font:12px/150% Arial,Verdana,"\5b8b\4f53";
+    color:#666;
+    background:#fff
+}
+.clearfix:before,.clearfix:after{
+    content:"";
+    display:table;
+}
+.clearfix:after {
+    clear:both;
+}
+.clearfix{
+    *zoom:1;/*IE/7/6*/
+}
+a{color:#666; text-decoration:none; }
+a:hover{color:#C81623;}
+h1,h2,h3,h4,h5,h6{text-decoration:none;font-weight:normal;font-size:100%;}
+s,i,em{font-style:normal;text-decoration:none;}
+.col-red{color: #C81623!important;}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+
+/*公共样式*/
+.w {
+    width: 960px;
+    margin: 0 auto;
+}
+body {
+    background: #E6EAE4;
+}
+.topBar {
+    background-color: #E8EBF2;
+    height: 28px;
+    border-bottom: 1px solid #ffffff;
+    text-align: center;
+}
+.content {
+    position: relative;
+}
+.topBar ul {
+    float: right;
+}
+.topBar ul li {
+    float: left;
+    width: 91px;
+    height: 22px;
+    background: url("../images/topBar_line1.gif") left no-repeat;
+    margin-top: 3px;
+}
+.topBar li a {
+    vertical-align: middle;
+    color: #0B65A7;
+}
+.topBar li span {
+    line-height: 22px;
+    margin-left: 2px;
+    font-size: 12px;
+}
+.topBar li .ico_down {
+    display: inline-block;
+    width: 6px;
+    height: 3px;
+    background: url("../images/topBar-arrow.down.png")no-repeat;
+}
+.topBar li a:hover {
+    border: 1px solid #cccccc;
+    background-color: #E6EAF9;
+    border-radius: 3px;
+    padding: 3px;
+}
+/*下拉菜单样式*/
+.topBar .menu_down1,
+.topBar .menu_down2,
+.topBar .menu_down3,
+.topBar .menu_down4,
+.topBar .menu_right1,
+.topBar .menu_right2 {
+    width: 91px;
+    padding: 3px 0;
+    position: absolute;
+}
+.topBar .menu_down1 a,
+.topBar .menu_down2 a,
+.topBar .menu_down3 a,
+.topBar .menu_down4 a,
+.topBar .menu_right1 a,
+.topBar .menu_right2 a {
+    display: block;
+    color: #0B65A7;
+    height: 22px;
+    line-height: 22px;
+    background: url("../images/topBar_menu_bg.gif");
+}
+.topBar .menu_down1 span,
+.topBar .menu_down2 span,
+.topBar .menu_down3 span,
+.topBar .menu_down4 span,
+.topBar .menu_right1 span,
+.topBar .menu_right2 span {
+    margin: 0px 5px 0 10px;
+}
+.topBar .menu_down1 {
+    top: 24px;
+    left: 600px;
+    display: none;
+}
+.topBar .menu_down2 {
+    top: 22px;
+    left: 690px;
+    display: none;
+}
+.topBar .menu_down3 {
+    top: 22px;
+    left: 780px;
+    display: none;
+}
+.topBar .menu_down4 {
+    top: 22px;
+    left: 870px;
+    display: none;
+}
+.topBar .menu_right1 {
+    top: 22px;
+    left: 690px;
+    display: none;
+}
+.topBar .menu_right2 {
+    top: 40px;
+    left: 690px;
+    display: none;
+}
+
+/*logo部分*/
+.head {
+    height: 60px;
+    padding: 15px 0 0 5px;
+    position: relative;
+}
+.head .logo {
+}
+.head .contact p {
+    position: absolute;
+    top: 15px;
+    right: 0;
+}
+.head .contact p a {
+    color: #FF0000;
+    font-weight: bold;
+}
+.head .contact ul {
+    position: absolute;
+    bottom: 5px;
+    right: 0px;
+    font-size: 16px;
+}
+.head .contact li {
+    float: left;
+}
+.head .contact .line {
+    width: 1px;
+    height: 14px;
+    background-color: #8E668D;
+    margin: 2px 5px 0 5px;
+}
+/*导航部分*/
+.nav ul {
+    width: 945px;
+    height: 45px;
+    border: 1px solid #9FCC4C;
+    background: url("../images/topNav-menu_background.jpg");
+    text-align: center;
+    line-height: 45px;
+    padding-left: 15px;
+
+}
+.nav li {
+    float: left;
+    padding-top: 8px;
+}
+.nav .line {
+    width: 2px;
+    height: 10px;
+    background: url("../images/nav_line.gif");
+    margin: 10px 3px 0 3px;
+}
+.nav li a {
+    font-size: 16px;
+    color: #ffffff;
+    display: block;
+    padding: 0 12px;
+    height: 38px;
+    line-height: 28px;
+}
+.nav li a:hover {
+    background-color: #fff;
+    padding: 0 12px;
+    color: #000000;
+    font-weight: bold;
+    height: 38px;
+    border-radius: 5px 5px 0 0;
+
+}
